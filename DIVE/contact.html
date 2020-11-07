@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!--文字コード指定-->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <!--cssファイルを読み込む-->
+  <title>株式会社DIVE</title>
+  <!--ブラウザのタブ名-->
+</head>
+
+<body>
+  <div class="container">
+    <header class="header clearfix">
+      <a href="index.html">
+        <!--ロゴを押すとホームに戻るように連携している-->
+        <img src="./images/logo.png" class="logo_image">
+        <!--ロゴ写真の添付、"./"は同じ階層の意味-->
+      </a>
+      <nav>
+        <!--ナビゲーション-->
+        <ul class="top_menu clearfix">
+          <!--class="top_menu"とclass="clearfix"を一緒にした書き方-->
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="business.html">事業内容</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--上部メニューバー-->
+    <img src="./images/contact.png" class="image_area">
+    <div class="wrapper clearfix">
+      <aside class="side_menu">
+        <nav>
+          <!--サイドメニューバー-->
+          <ul>
+            <li><a href="business.html">事業内容</a></li>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <article class="content">
+        <form method="post">
+          <table class="contact">
+            <tr>
+              <th>お名前</th>
+              <td><input type="text" class="text"></td>
+            </tr>
+            <tr>
+              <th>メールアドレス</th>
+              <td><input type="text" class="text"></td>
+            </tr>
+            <tr>
+              <th>性別</th>
+              <td>
+                <input type="checkbox" name="sex" value="male">男
+                <input type="checkbox" name="sex" value="female">女
+              </td>
+            </tr>
+            <tr>
+              <th>お問合わせ内容</th>
+              <td><input type="text" class="inquiry"></td>
+            </tr>
+          </table>
+          <p>
+            <input type="submit" value="送信" class="button">
+          </p>
+        </form>
+      </article>
+    </div>
+    <footer class="footer">
+      <p>Copyright © 2018 DIVE INC ALL RIGHTS RESERVED.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

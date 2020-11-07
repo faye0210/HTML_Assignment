@@ -1,0 +1,136 @@
+html {
+  font-size: 62.5%;
+  /*％指定なのは色んな端末に適したサイズにするため*/
+  height: 100%; /*HTMLに書くことによりブラウザの表示領域*/
+}
+body {
+  height: 100%;
+}
+.container {
+  width: 980px;  /*Webサイトの横幅*/
+  margin: 0 auto; /*０は上下の余白が無し、autoは左右の余白を自動設定。この二つで中央揃え*/
+  min-height: 100%; /*最小の高さ、子要素に合わせて大きくなる*/
+  position: relative;
+}
+ul {
+  /* 余白を削除 */
+  margin: 0;
+  padding: 0;
+}
+li {
+  /* リスト先頭の黒丸を削除 */
+  list-style: none;
+}
+.header {
+  background-color: #f5b4b3;
+  height: 50px;
+  font-size: 1.5rem;
+}
+ul.top_menu {
+  float: right;/*右側にトップメニューを寄せる*/
+}
+.top_menu li {
+  float: left;/*並んでいるリストの頭を左から開始する*/
+  width: auto;
+  /* paddingのコードを削除し、widthを追記 */
+}
+.top_menu li a {
+  color: #fff;
+  text-decoration: none;
+  /*下線部分を消す*//* displayとpaddingを追記 */
+  display: block;
+  padding: 15px;/*（元々親要素にあったのを）幅を子要素に依存*/
+}
+.top_menu li a:hover {
+  text-decoration: underline;
+}/*":hover"は疑似クラスでマウスオーバー（マウスが当たる）している時だけ適用される*/
+.logo_image {
+    width: 110px;
+    float: left;
+    margin: 0;
+}
+.image_area {
+  width: 100%;
+}/*画像サイズ*/
+.wrapper {
+  margin-top: 10px;
+  padding-bottom: 100px;
+}/*サイドメニューバーとコンテンツ領域の両方*/
+.side_menu {
+  width: 300px;
+  float: left;
+}
+.side_menu li {
+  background-color: #f5b4b3;
+  height: 6rem;
+  margin-bottom: 10px;
+}/*サイドメニューバーの色、高さ、隙間サイズ*/
+.side_menu li a {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 2rem;
+}/*中の文字の設定。高さが6remだから2remのフォントサイズと2remの隙間2つ*/
+.side_menu li:hover {
+  opacity: 0.6;/*透明化1～0の間で*/
+}
+.side_menu .point {/*2つのクラスを記入することで優先順位を上げる*/
+  background-color: #fcecec;
+}
+.side_menu .point a {
+  color: #4d4d4d;
+}
+.banner img {
+  width: 100%;
+}
+.banner{
+  margin-top: 20px;
+}/*20pxに設定することでside_menuの10px分を消す*/
+.banner a:hover {
+  opacity: 0.6;
+}
+.content {
+  width: 660px;
+  margin-left: 20px;
+  float: left;
+  font-size: 1.5rem;
+}
+.news {
+  height: 200px;
+  background-color: #fce8e7;
+  padding: 20px;
+  overflow: scroll;
+  line-height: 2;
+}
+.banner_extra {
+  margin-top: 10px;
+  display: table;
+}
+
+.banner_extra p {
+  display: table-cell;
+}
+.banner_extra p img {
+  width: 100%;
+}
+.footer {
+  background-color: #4d4d4d;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: table; /*テーブルじゃないものを<table>扱い出来る*/
+}
+.footer p {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;/*左右中央揃え*/
+  vertical-align: middle;/*上下中央揃え*/
+  display: table-cell;/*テーブルじゃないものを<td>扱い出来る*/
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
